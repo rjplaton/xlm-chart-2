@@ -19,15 +19,9 @@
 
   <div class="sidebar box">
   	<h3>
-  		<p>Popular Currencies</p> 
-  		<p>🔄</p>
-  		<p>XLM</p>
+  		<p>XLM Pairings</p>
   	</h3>
-  	<div class="button" onClick="fetchPriceValues()">
-  		Get Actual Prices
-  	</div>
-    <p></p>
-        <div class="button" onClick="createChart()">
+    <div class="button" onClick="createChart()">
       Update Chart
     </div>
     <p></p>
@@ -35,10 +29,6 @@
     <p><input type="checkbox" checked id=eth onclick="toggleCurrencyDisplay(this.id)">ETH</p>
     <p><input type="checkbox" checked id=ltc onclick="toggleCurrencyDisplay(this.id)">LTC</p>
     <p><input type="checkbox" checked id=usd onclick="toggleCurrencyDisplay(this.id)">USD</p>
-        <a href="./">
-          <div class="button">
-      Reset
-    </div></a>
   </div>
 
   <div class="content">
@@ -50,22 +40,22 @@
 	<!-- BarChart row start -->
 	<div class="BarChart-row" id="btcRow">
 	    <div class="BarChart-rowdesc">1 Bitcoin (BTC)</div>
-	    <div class="BarChart-bar BarChart-number" id="btcBar" onClick="barClick(this.id)" style="width: 100%"><p><span>150,000</span></p></div>
+	    <div class="BarChart-bar BarChart-number" id="btcBar" onClick="barClick(this.id)" style="width: 50%"><p><span>?</span></p></div>
     </div>
 	<!-- BarChart row end -->
 	<div class="BarChart-row" id="ethRow">
 	    <div class="BarChart-rowdesc">1 Ethereum (ETH)</div>
-	    <div class="BarChart-bar BarChart-number" id="ethBar" onClick="barClick(this.id)" style="width: 30%"><p><span>3000</span></p></div>
+	    <div class="BarChart-bar BarChart-number" id="ethBar" onClick="barClick(this.id)" style="width: 50%"><p><span>?</span></p></div>
 	</div>
 
 	<div class="BarChart-row" id="ltcRow">
 	    <div class="BarChart-rowdesc">1 Litecoin (LTC)</div>
-	    <div class="BarChart-bar BarChart-number" id="ltcBar" onClick="barClick(this.id)" style="width: 20%"><p><span>2000</span><p></div>
+	    <div class="BarChart-bar BarChart-number" id="ltcBar" onClick="barClick(this.id)" style="width: 50%"><p><span>?</span><p></div>
 	</div>
 
 	<div class="BarChart-row" id="usdRow">
 	    <div class="BarChart-rowdesc"> 1 US Dollar (USD)</div>
-	    <div class="BarChart-bar BarChart-number" id="usdBar" onClick="barClick(this.id)" style="width: 5%"><p><span>13</span></p></div>
+	    <div class="BarChart-bar BarChart-number" id="usdBar" onClick="barClick(this.id)" style="width: 50%"><p><span>?</span></p></div>
 	</div>
 </div>
 <!-- BarChart end -->

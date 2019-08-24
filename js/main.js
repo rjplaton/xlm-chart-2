@@ -108,7 +108,8 @@ function toggleCurrencyDisplay(clickedID) {
   } else {
     currencyRow.style.display = "none";
   }
-}
+};
+fetchPriceValues();
 
 
 
